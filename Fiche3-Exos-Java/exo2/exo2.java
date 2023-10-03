@@ -8,10 +8,11 @@ public class exo2
             System.out.print("Il faut 2 arguments pour le min et le max");
             return;
         }
+
         int min = Integer.parseInt(args[0]);
         int max = Integer.parseInt(args[1]);
-        
         String result ="";
+        
         for(int i= min; i<= max; i++)
         {
             if(i%3==0 && i%5 !=0)
