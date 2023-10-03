@@ -43,13 +43,15 @@ public class exoBonus
         // System.out.println("nb Ligne " + nombrelignetotal);
         // System.out.println("nb etoile : " + nbEtoileFinale);
         // System.out.println("nb Espace" + nbEtoileFinale / 2);
+        
         int nbEspace = nbEtoileFinale / 2;
 
+        //Print du sapin
         for(int i =1; i <= nbSapin; i++)
         {
             for(int j = 1; j <= nbLigneMax; j++)
             {
-                for(int k=1; k<= nbEspace; k++)
+                for(int k=1; k<= nbEspace; k++) 
                 {
                     System.out.print(" ");
                 }
@@ -61,12 +63,12 @@ public class exoBonus
                 nbEtoile=nbEtoile+2;
                 System.out.println();
             }
-            nbLigneMax ++;
+            nbLigneMax ++;          //Entre chaque sapin on augmente le nombre d'espace de 2 et on enleve 4 etoile
             nbEtoile = nbEtoile-4;
             nbEspace = nbEspace +2;
         }
 
-        // Affichage du tronc
+        //Print du tronc
         int troncLargeur = nbSapin;
         int troncHauteur = nbSapin;
 
