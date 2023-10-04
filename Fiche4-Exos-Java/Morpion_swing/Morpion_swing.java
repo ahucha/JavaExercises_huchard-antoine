@@ -151,6 +151,15 @@ public class Morpion_swing
 
     private static void resetGame(String[][] tabJeu, boolean[] joueur1Tour, boolean[] currentSymbole, int[] countTurn, JButton[][] boutons, JLabel label) 
     {
+        // Réinitialisez le tableau de jeu
+        for (int i = 0; i < 3; i++) 
+        {
+            for (int j = 0; j < 3; j++) 
+            {
+                tabJeu[i][j] = " ";
+            }
+        }
+    
         joueur1Tour[0] = quiCommence(new Random());
         currentSymbole[0] = true;
         countTurn[0] = 0;
